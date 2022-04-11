@@ -1,0 +1,153 @@
+//////////////////jazyky
+.jazyk{
+    padding: 0;
+    margin:0;
+
+
+    @media (min-width:450px) {
+        padding: 0 30px;
+    }
+
+    @media (min-width:550px) {
+        padding: 0 55px;
+    }
+
+    @media (min-width:650px) {
+        margin: 0;
+        padding: 0 80px;
+    }
+
+    
+    @media (min-width:730px) {
+        margin: 0;
+        padding: 0 110px;
+    }
+
+    @media (min-width:800px) {
+        margin: 0;
+        padding: 0 150px;
+    }
+    @media (min-width:860px) {
+        margin: 0;
+        padding: 0 190px;
+    }
+    @media (min-width:900px) {
+        margin: 0;
+        padding: 0;
+    }
+    @media (min-width:1030px) {
+        margin: 0 30px;
+        padding: 0;
+    }
+
+    @media (min-width:1180px) {
+        margin: 0 70px;
+        padding: 0;
+    }
+    @media (min-width:1340px) {
+        margin: 0 120px;
+        padding: 0;
+    }
+
+    @media (min-width:1480px) {
+        margin: 0 130px;
+        padding: 0;
+    }
+
+    @media (min-width:1800px) {
+        margin: 0 180px;
+        padding: 0;
+    }
+
+
+}
+.jazyky {
+    margin:20px 0;
+    padding: 0 80px;
+    width: 50%;
+
+    @media (max-width: 1600px) {
+        padding: 0 40px;
+        margin: 20px 0;
+    }
+
+    
+    @media (max-width: 1200px) {
+        padding: 0 70px;
+    }
+
+    @media (max-width: 900px) {
+        width: 100%;
+        padding: 0 140px;
+        margin: 50px 0 0 0;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+        margin: 0 20px;
+        padding:65px 100px 0 100px;
+    }
+
+    @media (max-width: 400px) {
+        padding:65px 80px 0 80px;
+        
+    }
+}
+
+.jazyk-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 20px 0 20px;
+
+
+    @media (max-width: 900px) {
+        width: 100%;
+        margin: 5px 0 0 0;
+    
+    }
+
+    @media (max-width: 600px) {
+        margin: 0;
+    }
+
+
+    &__jazyk {
+        display:block;
+        letter-spacing:0.5px;
+        width: 50%;
+
+    }   
+}
+
+.star-box {
+
+    display: flex;
+    padding: 0 0 0 55px; 
+    margin:0;
+    align-items:flex-start;
+    justify-content:flex-start;
+    width: 50%;
+
+    @media (max-width: 1200px) {
+        padding: 0 0 0 30px;
+      
+    }
+
+    @media (max-width: 900px) {
+        padding: 0 0 0 20px;
+      
+    }
+
+    @media (max-width: 600px) {
+        padding: 0 0 0 15px;
+    }
+
+    &__icon {
+      
+        height: 2.25rem;
+        width: 2.25rem;
+        fill: #fff;
+    }
+
+}

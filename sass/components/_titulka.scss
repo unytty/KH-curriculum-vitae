@@ -1,0 +1,53 @@
+.user{
+    margin: 15px;
+    padding: 0;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        margin: 0;
+
+    }
+
+}
+///////////////fotka
+
+
+.photo {
+    width: 240px;
+    height: 240px;
+    object-fit:cover;
+    border-radius:50%;
+    display:block;
+    margin:80px 10px 0 50px;
+    background-color:var(--color-grey-light-3);
+    border: 3px solid var(--color-grey-light-3);
+    box-shadow: 2px 2px;
+
+      
+    @media(max-width:1200px){
+        margin:50px 0 0 50px;
+      }
+  
+    @media(max-width:1000px){
+        height: 200px;
+        width: 200px;
+        margin:50px 0 0 40px;
+    }
+
+    @media (max-width:900px) {
+        width:180px;
+        height: 180px;
+        margin: 40px 0 0 0;
+        border:2px solid var(--color-grey-light-3);
+        box-shadow: 2px 2px; 
+    }
+
+    @media (max-width:600px) {
+        width:150px;
+        height: 150px;
+        margin: 50px 0 0 0;
+    }
+}

@@ -1,0 +1,119 @@
+///////////////////////////////ME-VIEW-obsah
+
+.uvodni-predstaveni{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 100px 5px 100px;
+    //text-align: justify;
+    padding: 0 auto;
+
+    h3{
+        align-self: start; 
+        margin: 0 0 10px 0;
+
+        @media (max-width: 900px) {
+            margin:0;
+        }
+
+    }
+
+    @media (max-width:1200px) {
+        margin: 0 100px; 
+        padding: auto;
+    }
+
+    
+    @media (max-width:900px) {
+        margin: 0 100px; 
+    }
+
+    @media (max-width:600px) {
+        //text-align: left;
+        margin: 0 80px; 
+       
+    }
+
+    @media (max-width:450px) {
+        margin: 0 40px; 
+       
+    }   
+}
+
+.pruvodni-dopis{
+    display:flex;
+    margin:20px 0;
+    flex-direction: column;
+    align-items:center;
+
+
+
+    &__popis{
+        text-indent:2%;
+        margin: 10px 0 0 0;       
+        text-align: justify;
+        padding: 0 0 10px 0;
+    
+
+        @media (max-width:900px) {
+            text-indent:3%;
+            text-align: left; 
+            margin:8px 0 0 0; 
+            padding: 0 0 8px 0;
+            
+        }
+    }
+
+    &__more{
+        display:none;
+    }
+
+    &__myBtn{
+        display: block;
+        margin:30px 0 15px 0;
+        background-image: linear-gradient(to right, var(--color-primary-light)  0%, var(--color-primary-dark) 51%, var(--color-primary-light) 100%);
+        background-color:#ededed;
+        border-radius:15px;
+        border:1px solid var(--color-primary-light);
+        outline: none;
+        cursor:pointer;
+        color:#fff;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size:20px;
+        padding: 15px 45px;
+        text-decoration:none;
+        text-shadow: var(--shadow-dark);   
+        outline:none;
+        box-shadow: 0 0 20px 0 #eee;
+        background-size: 200% auto;
+
+        @media (max-width:900px) {
+
+            font-size:16px;
+            padding: 10px 35px;
+            margin:30px 0 0 0;
+        }
+
+    }
+
+    &__myBtn:hover {
+        background-color:#ededed;
+        background-position: right center;
+        transition: 0.5s;
+        
+    }
+
+    &__myBtn:active {
+        position:relative;
+        top:2px;
+    }
+
+    &__podpis{
+        text-transform: uppercase;
+        margin: 10px;
+        padding: 0 20px;
+        text-align: end;
+    }
+}

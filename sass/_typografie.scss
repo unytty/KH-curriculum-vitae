@@ -1,0 +1,156 @@
+body{
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color:var(--color-grey-dark-2);
+
+}
+
+////////////////////////////////HLAVNI NADPISY  
+.hlavni-nadpisy {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    backface-visibility: hidden;
+}
+
+h1.hlavni-nadpis { 
+    margin:0;
+    padding: 90px 0 10px 0;
+    display:block;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-size: 11rem; 
+    
+    animation: moveInLeft 3s ease-out;
+
+    @media (min-width:1800px) {
+        font-size:13.5rem;
+        padding: 110px 20px 10px 0;
+    }
+
+    @media(max-width: 1200px) {
+        font-size:8.8rem;
+        padding: 140px 0 30px 30px;
+    }
+
+    @media (max-width: 900px) {
+        font-size: 9rem;  
+        padding: 40px 0;
+        text-align: center; 
+    }
+
+    @media (max-width: 600px) {
+        font-size: 6rem;
+        padding: 20px 0;
+        text-align: center; 
+    }
+}
+
+h2.hlavni-nadpis-sub {
+    display: block;
+    font-size: 2rem;
+    font-weight:700;
+    letter-spacing: 8px;
+    padding: 0px 0 12px 105px;
+
+    animation: moveInRight 3s ease-out;
+
+    @media (min-width:1800px) {
+        font-size:2.2rem;
+        padding: 0px 0 20px 175px;
+    }
+
+    @media (max-width:1200px) {
+        font-size:1.5rem;
+        padding: 0px 0 12px 105px;
+    }
+
+    @media (max-width:900px) {
+        font-size:2.2rem; 
+        letter-spacing:2.5px;
+        padding: 0 0 10px 0;
+        text-align: center; 
+        font-weight: 400;
+    }
+    
+    @media (max-width: 600px) { 
+        letter-spacing:1px;
+        padding: 0 0 5px 0;
+        text-align: center; 
+        font-weight: 400; 
+    }
+}
+
+
+.nadpis-sekce-barevny{
+    font-size: 3.5rem;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    background-image:linear-gradient(to left top,  var(--color-primary), var(--color-primary-light), var(--color-primary-dark));
+    -webkit-background-clip: text;
+    color:transparent;
+    letter-spacing: 3px;
+    transition: all .2s;
+    text-shadow: .5rem 1rem 2rem rgba(0,0,0,.3);
+
+
+    @media (max-width: 900px) {
+        font-size: 3rem; 
+        padding: 0; 
+        margin: 40px auto;      
+    }
+
+    
+    @media (max-width: 600px) {  
+        letter-spacing: 2px;
+        
+    }
+
+
+    &:hover{
+        transform: scale(1.25);
+        //transform: skewY(-2deg) skewX(-15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba(0,0,0,.3);
+        transition: all .2s;
+    }
+}
+
+.nadpis-sekce-bily{
+    padding: 0;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: .5rem 1rem 2rem rgba(0,0,0,.3);
+
+    @media (max-width: 900px) {
+        font-size: 3rem; 
+        margin: 40px auto;
+    }
+
+   
+    @media (max-width: 600px) {    
+        letter-spacing: 2px;
+
+    }
+
+
+    &:hover{
+        transform: scale(1.25);
+        text-shadow: .5rem 1rem 2rem rgba(0,0,0,.3);
+        transition: all .2s;
+    }
+}
+
+footer {
+    color: var(--color-grey-dark-3);
+}

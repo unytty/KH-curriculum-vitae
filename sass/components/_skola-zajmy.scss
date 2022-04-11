@@ -1,0 +1,47 @@
+
+.skola  {
+
+    display: flex;
+    justify-content:center;
+
+
+    
+    &__rok{
+        padding: 10px 20px 8px 10px;
+
+        
+        @media (max-width: 900px) {
+            padding: 8px 40px 0 0;
+        }
+
+        @media (max-width: 600px) {
+            padding: 8px 30px 0 5px;
+        }
+    }
+}
+
+.zajmy-box {
+    display: flex;
+    margin: 0 0 60px 0;
+    justify-content:center;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+    @media (max-width: 900px) {
+        margin: 0;
+        padding: 0 70px 20px 70px;
+
+    }
+
+    @media (max-width: 600px) {
+        margin: 0;
+        padding: 0 25px 20px 25px;
+
+    }
+
+    &__nazev {
+        padding: 0 15px;
+        text-align:justify;
+        font-weight: 700;
+    }
+}

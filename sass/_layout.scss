@@ -1,0 +1,170 @@
+header {
+    height: 60rem;
+    background-image: linear-gradient(to right top,   #81e7dfaf, #81a5e7bb, rgba(56, 31, 73, 0.787)), url(../img/rigi--L.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: var(--color-grey-light-2);
+    display: flex;
+    flex-direction: column;
+    
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 0 85%);
+
+    @media (max-width: 900px) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+        height: 90rem;
+        background-image: linear-gradient(to right top,   #81e7dfaf, #81a5e7bb, rgba(56, 31, 73, 0.787)), url(../img/rigi--small.jpg);
+    }
+
+    @media (max-width: 600px) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+        height: 70rem;
+    }
+}
+
+
+.skills-jazyky {
+    content-visibility: auto;
+    background-image: linear-gradient(to right bottom,  #81e7dfaf, #81a5e7c5,  rgba(56, 31, 73, 0.787)), url(../img/praded--l.jpg);
+    color:#fff; 
+    background-size: cover;
+    background-position: center;
+    height: 200%;
+    clip-path:polygon(0% 15%, 100% 0, 100% 85%, 0 100%);
+    display: flex;
+    padding:90px 0;
+
+    @media (max-width: 900px) {
+        height:80rem;
+        flex-direction: column-reverse;
+        padding:30px 0 120px 0;
+        align-items: center; 
+        clip-path:polygon(0% 20%, 100% 0, 100% 80%, 0 100%);
+        background-image: linear-gradient(to right bottom,  #81e7dfaf, #81a5e7c5,  rgba(56, 31, 73, 0.787)), url(../img/praded--small.jpg);
+     
+    }
+
+    @media (max-width: 600px) {
+        height:100%;
+        padding: 25px 0;
+        
+    }
+
+}
+.kurzy-cerfikaty {
+    display:flex;
+    padding:20px 0 0 0;
+    
+    @media (max-width:900px) {
+        flex-direction: column;
+        padding: 20px 0 0 0;
+    }
+
+}
+
+.vzdelani-zajmy {
+    content-visibility: auto;
+    margin:0;
+    padding: 20px 0;
+    background-image: linear-gradient(to right bottom,  #81e7dfaf, #81a5e7c5,  rgba(56, 31, 73, 0.787)), url(../img/IMG_jahody-l.jpg);
+    color:#fff; 
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100%;
+    clip-path:polygon(0% 0%, 100% 15%, 100% 100%, 0 100%);
+    display: flex;
+ 
+
+    @media (max-width: 900px) {
+        margin:0;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        padding-top: 30px;
+        clip-path:polygon(0% 0%, 100% 20%, 100% 100%, 0 100%);
+        background-image: linear-gradient(to right bottom,  #81e7dfaf, #81a5e7c5,  rgba(56, 31, 73, 0.787)), url(../img/jahody--small.jpg);
+    }
+
+
+
+    &__vzdelani {
+        margin: 20px 120px;
+        width: 50%;
+
+        @media (max-width:1400px) {
+            margin:20px 40px;
+        }
+            
+        @media (max-width: 900px) {
+            width:100%;
+            margin:20px 0 0 0;
+                
+        }
+    }
+    
+    &__zajmy{
+        margin:20px 120px;
+        width:50%;
+
+        @media (max-width:1200px) {
+            margin:20px 60px;
+        }
+          
+
+        @media (max-width: 900px) {
+            width:100%;
+            margin:0;  
+        }
+    }
+}
+
+footer {
+   
+    margin:0;
+    padding: 0 30px 10px 30px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: var(--color-grey-dark-1);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+
+    @media (max-width:1200px) {
+        height:100%;
+
+    }
+
+    @media (max-width: 900px) {
+        height: 22.5rem;
+        padding: 10px 0;
+        margin:0;
+        flex-direction: column;
+    }
+}
+
+.footer-kontakt {
+   
+    display: flex;
+    align-items: center; 
+ 
+
+    @media (max-width: 1100px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin:0;
+        align-items:center;
+    }
+    
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        margin:0;
+        align-items:center;
+    }
+   
+}

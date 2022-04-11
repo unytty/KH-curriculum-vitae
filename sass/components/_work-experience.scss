@@ -1,0 +1,61 @@
+
+.work-experience{
+    margin: 30px 80px;
+    display:flex;
+    flex-direction: column;
+
+    @media (max-width: 1200px) {
+        margin:30px 60px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 600px) {
+        margin:20px;
+    }
+
+
+    &__card-row {
+        display:flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-direction: row;
+
+        @media (max-width: 1200px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin:0 auto;
+        }
+    }
+
+    &__card-detail{
+        display:block;
+        text-align: center;
+        margin: 10px;
+        width: 25%;
+
+        @media (max-width: 1200px) {
+            width:47%;
+        }
+
+        @media (max-width: 900px) {
+            width:80%;
+        }
+
+        @media (max-width: 600px) {
+            width:85%;
+        }
+    }
+    
+    &__pozice {
+       text-transform: uppercase;
+       padding: 10px 0;
+       text-shadow: var(--shadow-light);
+    }
+
+    &__popis {
+        padding: 10px 15px;
+        text-align:justify;
+    }
+
+}
